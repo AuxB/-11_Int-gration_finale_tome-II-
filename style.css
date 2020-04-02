@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'PartyBusiness';
+    src: url('src/polices/PartyBusiness-4B0K.ttf');
+    }
+@font-face {
+    font-family: 'Aniron';
+    src: url('src/polices/aniron-font/Aniron-7BaP.ttf');
+    }
+@font-face {
+    font-family: 'tngan';
+    src: url('src/polices/tengwar_annatar/tngan.ttf');
+    }
+
+body{
+    width: 98%;
+    margin: auto;
+}
+
+
+h1, ::placeholder, option, select, .form-control{
+    font-family: 'Aniron';
+}
+
+p, h5{
+    font-family: 'PartyBusiness';
+}
+
+/*NAVBAR*/
+.navbar-light .navbar-brand img {
+    margin-right: 50px;
+}
+.grey-nav{
+    background-color: rgb(226, 121, 61);  
+}
+
+.navbar-light .grey-link, .navbar-light .navbar-nav .grey-link{
+    font-family: 'Aniron';
+    color: #fff;
+}
+
+.grey-link:nth-of-type(2){
+    border-right: 1px #fff;
+}
+
+/* CAROUSEL */
+
+.carousel img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.title-carousel h5{
+    font-size: 4rem;
+}
+
+.title-carousel p{
+    font-size: 2rem;
+}
+
+.title-carousel {
+    font-family: 'PartyBusiness';
+    position: absolute;
+    right: 15%;
+    bottom: 120px;
+    left: 19%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+
+
+/* CARDS */
+
+.sigle{
+    color: rgb(226, 121, 61);
+    font-family: 'tngan';
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+.cards-section {
+    background: url('src/img/bg_light.png');
+    padding-bottom: 50px;
+}
+
+.card-deck{
+    width: 97%;
+    margin: auto;
+}
+
+.fellows-title{
+    padding: 30px 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.fellows-title span:nth-of-type(2){
+    font-size: 1rem;
+}
+
+.card {
+    position: relative;
+}
+
+.card img{
+    transition: .5s ease;
+    border: 5px solid #111;
+}
+
+.card span {
+    color: rgb(226, 121, 61);
+}
+
+.card:hover .reward {
+    opacity: 1;
+  }
+.card:hover .bg-reward {
+    opacity: 0.8;
+}
+
+.card:hover img{
+    cursor: pointer;
+}
+
+.card h5 {
+    color: #fff;
+    font-size: 3.8rem;
+}
+
+.card .lined{
+    text-decoration: line-through;
+    text-decoration-color: rgb(226, 121, 61);
+
+}
+
+.reward, .bg-reward {
+    position: absolute;
+    opacity: 0;
+    padding: 5px 0;
+    width: 80%;
+    top: 12%;
+    left: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translate(-50%, -50%);}
+
+.reward{
+    font-size: 2em;
+    color: #222;
+}
+
+.bg-reward{
+    background-color: #fff;
+    filter: blur(2px);
+    min-height: 90px;
+    border-radius: 10px;
+}
+
+.card-title{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.dead{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(226, 121, 61);
+    font-size: 3em;
+}
+
+.card-body {
+    background-color: #111;
+    color: #bbb;
+    height: 125px;
+    padding: 10px;
+}
+
+.card-text{
+    font-size: 1.8rem;
+}
+
+
+/* CONTACT */
+
+hr{
+    position: absolute;
+    top: 0;
+    left: 28%;
+    height: 2px;
+    width: 500px;
+    background-color: rgb(226, 121, 61);
+    margin: 0;
+}
+
+
+.contact-section{
+    background: url('src/img/bg_dark.png');
+    padding: 50px 30px;
+    position: relative;
+    
+}
+
+.contact-section h1{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-section .sigle{
+    font-size: 1.5rem;
+}
+
+.contact-section div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    width: 45%;
+    height: 100%;
+}
+#exampleFormControlTextarea1{
+    height: 200px;
+}
+
+.contact-section img{
+    width: 400px;
+    margin-left: 20px;
+}
+
+.form-control::placeholder, option, select{
+    color: #bbb;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(226, 121, 61);  
+    font-family: 'Aniron';
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 18px 70px;
+}
+
+footer p {
+    margin-bottom: 2px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+footer ul{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer ul a {
+    color: #fff;
+}
+
+footer img {
+    margin-top: 20px;
+    width: 70%;
+}
+
+@media screen and (max-width: 640px){
+    .card-text{
+        font-size: 1.2rem;
+    }
+    .contact-section div:nth-of-type(1){
+        flex-direction: column;
+        justify-content: center;
+    }
+    form {
+        width: 300px;
+    }
+    .contact-section img{
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .card-text{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .fellows-title{
+        font-size: 1em;
+    }
+    .sigle{
+        font-size: 0.8em;
+    }
+    .fellows-title span:nth-of-type(2){
+        display: none;
+    }
+    .contact-section h1{
+        font-size: 1em;
+    }
+
+}
