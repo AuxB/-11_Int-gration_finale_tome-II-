@@ -1,0 +1,30 @@
+@mixin createRing($size, $color){
+    $shadow-size: $size/50 $size/50 $size/25 darken($color, 10%);
+    width: $size;
+    height: $size;
+    border: solid $size/12.5 $color;
+    border-radius: $size/2;
+    box-shadow: $shadow-size, inset $shadow-size;
+    
+}
+
+.orange-ring{
+    @include createRing(50px, rgb(226, 121, 61));
+    margin: 0 15px;
+}
+
+.yellow-ring{
+    @include createRing(150px, #ebb00e);
+    margin: 0 15px;
+}
+$lastSize: 25;
+@for $i from 1 through 6 {
+  .rings-dark{
+    div:nth-of-type(#{$i}) {
+      @include createRing($i*10 + 25px, #555);
+      margin-left: -5px*$i
+    }
+  }
+
+  
+}

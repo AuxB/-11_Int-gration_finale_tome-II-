@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'PartyBusiness';
+    src: url('src/polices/PartyBusiness-4B0K.ttf');
+    }
+@font-face {
+    font-family: 'Aniron';
+    src: url('src/polices/aniron-font/Aniron-7BaP.ttf');
+    }
+@font-face {
+    font-family: 'tngan';
+    src: url('src/polices/tengwar_annatar/tngan.ttf');
+    }
+
+body{
+    width: 98%;
+    margin: auto;
+}
+
+
+p, h5{
+    font-family: 'PartyBusiness';
+}
+
+/*NAVBAR*/
+.navbar-light .navbar-brand img {
+    margin-right: 50px;
+}
+.grey-nav{
+    background-color: rgb(226, 121, 61);  
+}
+
+.navbar-light .grey-link, .navbar-light .navbar-nav .grey-link{
+    font-family: 'Aniron';
+    color: #fff;
+}
+
+.grey-link:nth-of-type(2){
+    border-right: 1px #fff;
+}
+
+/* RING */
+
+.rings-section{
+    background-image: url('src/img/bg_light.png');
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Aniron';
+    font-size: 1.9rem;
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    margin-top: 15px;
+    font-family: 'Aniron';
+    font-size: 1.9rem; 
+}
+
+.rings-for, .rings-dark{
+    display: flex;
+    align-items: center;
+}
+
+.rings-for{
+    flex-direction: column;
+}
+
+.orange-ring {
+    width: 50px;
+    height: 50px;
+    border: solid 4px #e2793d;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px #cd5e1f, inset 1px 1px 2px #cd5e1f;
+    margin: 0 15px;
+  }
+  
+  .yellow-ring {
+    width: 150px;
+    height: 150px;
+    border: solid 12px #ebb00e;
+    border-radius: 75px;
+    box-shadow: 3px 3px 6px #bb8c0b, inset 3px 3px 6px #bb8c0b;
+    margin: 0 15px;
+  }
+  
+  .rings-dark div:nth-of-type(1) {
+    width: 35px;
+    height: 35px;
+    border: solid 2.8px #555;
+    border-radius: 17.5px;
+    box-shadow: 0.7px 0.7px 1.4px #3c3c3c, inset 0.7px 0.7px 1.4px #3c3c3c;
+    margin-left: -5px;
+  }
+  
+  .rings-dark div:nth-of-type(2) {
+    width: 45px;
+    height: 45px;
+    border: solid 3.6px #555;
+    border-radius: 22.5px;
+    box-shadow: 0.9px 0.9px 1.8px #3c3c3c, inset 0.9px 0.9px 1.8px #3c3c3c;
+    margin-left: -10px;
+  }
+  
+  .rings-dark div:nth-of-type(3) {
+    width: 55px;
+    height: 55px;
+    border: solid 4.4px #555;
+    border-radius: 27.5px;
+    box-shadow: 1.1px 1.1px 2.2px #3c3c3c, inset 1.1px 1.1px 2.2px #3c3c3c;
+    margin-left: -15px;
+  }
+  
+  .rings-dark div:nth-of-type(4) {
+    width: 65px;
+    height: 65px;
+    border: solid 5.2px #555;
+    border-radius: 32.5px;
+    box-shadow: 1.3px 1.3px 2.6px #3c3c3c, inset 1.3px 1.3px 2.6px #3c3c3c;
+    margin-left: -20px;
+  }
+  
+  .rings-dark div:nth-of-type(5) {
+    width: 75px;
+    height: 75px;
+    border: solid 6px #555;
+    border-radius: 37.5px;
+    box-shadow: 1.5px 1.5px 3px #3c3c3c, inset 1.5px 1.5px 3px #3c3c3c;
+    margin-left: -25px;
+  }
+  
+  .rings-dark div:nth-of-type(6) {
+    width: 85px;
+    height: 85px;
+    border: solid 6.8px #555;
+    border-radius: 42.5px;
+    box-shadow: 1.7px 1.7px 3.4px #3c3c3c, inset 1.7px 1.7px 3.4px #3c3c3c;
+    margin-left: -30px;
+  }
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(226, 121, 61);  
+    font-family: 'Aniron';
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 18px 70px;
+}
+
+footer p {
+    margin-bottom: 2px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+footer ul{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer ul a {
+    color: #fff;
+}
+
+footer img {
+    margin-top: 20px;
+    width: 70%;
+}
+
+@media screen and (max-width: 640px){
+    .card-text{
+        font-size: 1.2rem;
+    }
+    .contact-section div:nth-of-type(1){
+        flex-direction: column;
+        justify-content: center;
+    }
+    form {
+        width: 300px;
+    }
+    .contact-section img{
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .card-text{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .fellows-title{
+        font-size: 1em;
+    }
+    .sigle{
+        font-size: 0.8em;
+    }
+    .fellows-title span:nth-of-type(2){
+        display: none;
+    }
+    .contact-section h1{
+        font-size: 1em;
+    }
+
+}
