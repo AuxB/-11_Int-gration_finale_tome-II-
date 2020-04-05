@@ -5,4 +5,4 @@ During my fictive intership, Sauron give me the mission to make a website for hi
 
 *(Integration Quest for the Wild Code School)*
 
-[!](https://imgur.com/a/1AQX3Wi)
+![FindThePrecious website](https://imgur.com/a/1AQX3Wi)
